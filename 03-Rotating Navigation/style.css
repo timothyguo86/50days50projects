@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+:root {
+  --highlight-color: #ff7979;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -32,7 +36,7 @@ body {
 }
 
 .circle {
-  background-color: #ff7979;
+  background-color: var(--highlight-color);
   border-radius: 50%;
   height: 200px;
   position: relative;
@@ -117,7 +121,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff7979;
+  color: var(--highlight-color);
   font-weight: bold;
 }
 

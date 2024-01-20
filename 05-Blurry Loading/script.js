@@ -1,5 +1,6 @@
 const loadText = document.querySelector('.loading-text')
 const bg = document.querySelector('.bg')
+const startingBlurValue = 30
 
 let load = 0
 
@@ -14,5 +15,5 @@ function blurring() {
 
   loadText.innerText = `${load}%`
   loadText.style.opacity = 1 - load / 100
-  bg.style.filter = `blur(${30 - 0.3 * load}px)`
+  bg.style.filter = `blur(${startingBlurValue - (startingBlurValue / 100) * load}px)`
 }
