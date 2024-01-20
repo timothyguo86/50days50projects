@@ -8,7 +8,7 @@ checkHiddenItems()
 function checkHiddenItems() {
   const triggerBottom = window.innerHeight * windowPortion
 
-  hiddenItems.forEach((hiddenItem) => {
+  hiddenItems.forEach(hiddenItem => {
     const hiddenItemTop = hiddenItem.getBoundingClientRect().top
     hiddenItemTop < triggerBottom ? hiddenItem.classList.add('show') : hiddenItem.classList.remove('show')
   })

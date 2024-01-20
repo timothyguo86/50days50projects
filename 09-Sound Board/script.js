@@ -1,6 +1,6 @@
 const sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong']
 
-sounds.map((sound) => {
+sounds.map(sound => {
   const audio = document.createElement('audio')
   audio.setAttribute('src', `sounds/${sound}.mp3`)
   audio.setAttribute('id', sound)
@@ -19,7 +19,7 @@ sounds.map((sound) => {
 })
 
 function stopSongs() {
-  sounds.map((sound) => {
+  sounds.map(sound => {
     const song = document.getElementById(sound)
     song.pause()
     song.currentTime = 0
