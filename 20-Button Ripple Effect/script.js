@@ -17,5 +17,7 @@ buttons.forEach(button => {
     circle.style.left = xInside + 'px'
 
     this.append(circle)
+
+    setTimeout(() => circle.remove(), 500)
   })
 })
