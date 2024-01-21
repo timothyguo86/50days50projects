@@ -37,10 +37,6 @@ textarea {
   font-family: inherit;
 }
 
-textarea:focus {
-  outline: none;
-}
-
 .tag {
   background-color: #f0932b;
   color: #fff;

@@ -60,10 +60,6 @@ body {
   top: 50%;
 }
 
-.circle button:focus {
-  outline: none;
-}
-
 .circle button#open {
   left: 60%;
 }

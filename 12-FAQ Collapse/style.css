@@ -84,11 +84,6 @@ h1 {
   top: 30px;
   width: 30px;
 }
-
-.faq-toggle:focus {
-  outline: none;
-}
-
 .faq-toggle .fa-times,
 .faq.active .faq-toggle .fa-chevron-down {
   display: none;

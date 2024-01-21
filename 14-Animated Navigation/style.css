@@ -72,10 +72,6 @@ nav ul a {
   width: 30px;
 }
 
-.icon:focus {
-  outline: none;
-}
-
 .line {
   background-color: #5290f9;
   height: 2px;
