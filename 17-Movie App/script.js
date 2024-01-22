@@ -2,7 +2,7 @@ const POPULAR_MOVIE_API_URL = 'https://api.themoviedb.org/3/movie/popular?langua
 const IMG_PATH = 'https://image.tmdb.org/t/p/w500/'
 const SEARCH_API_URL = 'https://api.themoviedb.org/3/search/movie?query='
 const API_KEY =
-  'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkYWRiMDE5NzMwYzAwNzU4Njg5NTVkMWVjOTQwNDBiYiIsInN1YiI6IjY1YWM4MmM1ZDEwMGI2MDBlYjJhMDc3YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.X7ZhvNyVpe29k3w8nzToT03HPib3cQeWpF4xU7qarDc'
+  'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkYWRiMDE5NzMwYzAwNzU4Njg5NTVkMWVjOTQwNDBiYiIsInN1YiI6IjY1YWM4MmM1ZDEwMGI2MDBlYjJhMDc3YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.X7ZhvNyVpe29k3w8nzToT03HPib3cQeWpF4xU7qarDc'
 
 const form = document.querySelector('#form')
 const search = document.querySelector('#search')
@@ -12,7 +12,7 @@ const options = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer ${API_KEY}'
+    Authorization: API_KEY
   }
 }
 
