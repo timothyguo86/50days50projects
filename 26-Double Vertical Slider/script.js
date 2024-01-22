@@ -24,8 +24,8 @@ const changeSlide = direction => {
     if (activeSlideIndex < 0) {
       activeSlideIndex = slidesLength - 1
     }
-
-    slideRight.style.transform = `translateY(-${activeSlideIndex * 100}vh)`
-    slideLeft.style.transform = `translateY(${activeSlideIndex * 100}vh)`
   }
+
+  slideRight.style.transform = `translateY(-${activeSlideIndex * 100}vh)`
+  slideLeft.style.transform = `translateY(${activeSlideIndex * 100}vh)`
 }
