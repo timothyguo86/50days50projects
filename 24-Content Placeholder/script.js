@@ -8,7 +8,7 @@ const date = document.querySelector('#date')
 const animated_bgs = document.querySelectorAll('.animated-bg')
 const animated_bg_texts = document.querySelectorAll('.animated-bg-text')
 
-// setTimeout(getData, 2000)
+setTimeout(getData, 2000)
 
 function getData() {
   header.innerHTML = `
