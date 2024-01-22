@@ -21,12 +21,17 @@ button {
   border: 1px solid purple;
   border-radius: 5px;
   color: #fff;
+  cursor: pointer;
   letter-spacing: 2px;
   margin: 10px 0;
   overflow: hidden;
   padding: 20px 30px;
   position: relative;
   text-transform: uppercase;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 button .circle {
