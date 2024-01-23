@@ -72,38 +72,22 @@ h4 {
 .replay {
   background-color: #3498db;
   border: none;
-  border-radius: 3px;
-  color: aliceblue;
+  border-radius: 5px;
+  color: #fff;
   cursor: pointer;
-  display: inline-block;
-  padding: 5px;
-  text-align: center;
-  transition: all 0.3s;
-}
-
-.replay span {
-  cursor: pointer;
-  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
   position: relative;
-  transition: 0.3s;
+  transition: background-color 0.3s;
 }
 
-.replay span:after {
-  content: '\00bb';
-  opacity: 0;
-  position: absolute;
-  right: -20px;
-  top: 0;
-  transition: 0.5s;
+.replay:hover {
+  background-color: #0640b4;
 }
 
-.replay:hover span {
-  padding-right: 25px;
-}
-
-.replay:hover span:after {
-  opacity: 1;
-  right: 0;
+.replay:active {
+  transform: scale(0.98);
 }
 
 @keyframes hide {
