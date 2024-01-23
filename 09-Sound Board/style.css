@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: rgb(161, 100, 233);
   align-items: center;
+  background-color: rgb(161, 100, 233);
   display: flex;
   flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
@@ -23,14 +23,14 @@ body {
 
 .btn {
   background-color: rebeccapurple;
-  border-radius: 5px;
   border: none;
+  border-radius: 5px;
   color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.2rem;
   margin: 1rem;
   padding: 1.5rem 3rem;
-  font-size: 1.2rem;
-  font-family: inherit;
-  cursor: pointer;
 }
 
 .btn:hover {
