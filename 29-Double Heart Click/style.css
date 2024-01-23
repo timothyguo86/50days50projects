@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+small {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.loveMe {
+  height: 536px;
+  width: 344px;
+  background: url('https://images.unsplash.com/photo-1635975229704-0a420e777a56?q=80&w=973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.loveMe .fa-heart {
+  position: absolute;
+  animation: grow 0.6s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
