@@ -1,6 +1,6 @@
 const textEl = document.querySelector('#text')
 const speedEl = document.querySelector('#speed')
-const text = 'We Love Programming'
+const text = 'All work and no play makes Jack a dull boy.'
 let speed = speedEl.value
 let idx = 1
 
