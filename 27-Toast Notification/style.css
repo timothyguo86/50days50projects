@@ -44,9 +44,9 @@ body {
   background-color: #fff;
   border-radius: 5px;
   color: rebeccapurple;
+  font-weight: bold;
   margin: 0.5rem;
   padding: 1rem 2rem;
-  font-weight: bold;
 }
 
 .toast.info {

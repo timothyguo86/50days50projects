@@ -41,8 +41,8 @@ body {
 }
 
 .user-form input:focus {
-  outline: none;
   background-color: #3a46a6;
+  outline: none;
 }
 
 .card {

@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: darksalmon;
   align-items: center;
+  background-color: darksalmon;
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
@@ -17,20 +17,20 @@ body {
 }
 
 div {
-  position: absolute;
-  bottom: 20px;
   background: rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
+  bottom: 20px;
   font-size: 18px;
+  padding: 10px 20px;
+  position: absolute;
 }
 
 input {
-  width: 50px;
-  padding: 5px;
-  font-size: 18px;
   background-color: darksalmon;
   border: none;
+  font-size: 18px;
+  padding: 5px;
   text-align: center;
+  width: 50px;
 }
 
 input:focus {
