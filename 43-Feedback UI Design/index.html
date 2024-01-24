@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>43-Feedback UI Design</title>
+  </head>
+  <body>
+    <div id="panel" class="panel-container">
+      <strong>
+        How satisfied are you with our <br />
+        customer support performance?
+      </strong>
+      <div class="ratings-container">
+        <div class="rating" data-rating="Unhappy">
+          <img src="https://cdn-icons-png.flaticon.com/512/187/187150.png" alt="sad face" />
+          <small>Unhappy</small>
+        </div>
+        <div class="rating" data-rating="Neutral">
+          <img src="https://cdn-icons-png.flaticon.com/512/187/187136.png" alt="neutral face" />
+          <small>Neutral</small>
+        </div>
+        <div class="rating active" data-rating="Satisfied">
+          <img src="https://cdn-icons-png.flaticon.com/512/187/187133.png" alt="happy face" />
+          <small>Satisfied</small>
+        </div>
+      </div>
+      <button class="btn" id="send">Send Review</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
