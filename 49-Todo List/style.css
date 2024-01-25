@@ -19,16 +19,16 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  min-height: 200px;
   height: 200px;
+  min-height: 200px;
 }
 
 header h1 {
   color: rgb(179, 131, 226);
   font-size: 6rem;
+  margin: 0;
   opacity: 0.4;
   text-align: center;
-  margin: 0;
 }
 
 header small {
@@ -63,9 +63,9 @@ form {
   background-color: #fff;
   list-style-type: none;
   margin: 0;
-  padding: 0;
   max-height: 500px;
   overflow: auto;
+  padding: 0;
 }
 
 .todos li {
