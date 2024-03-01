@@ -1,8 +1,10 @@
 # 50 Days 50 Projects
 
-## Overview
-
 This project is a collection of small web development projects designed to improve HTML, CSS & JavaScript skills by building practical and fun applications.
+
+### [DEMO](https://timothyguo86.github.io/50days50projects/)
+
+---
 
 |  #  | Project                                                                                                                              | Live Demo                                               |
 | :-: | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------- |
