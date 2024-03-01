@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>50 Days 50 Projects</title>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+        />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        />
+      </symbol>
+    </svg>
+
+    <header data-bs-theme="dark">
+      <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4>About</h4>
+              <p class="text-body-secondary">
+                I'm Yuxin Guo: A developer & designer. I've created digital experiences for all kinds of companies, and
+                now focus on helping teams create and maintain design systems.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://www.linkedin.com/in/timothyguo/" class="text-white">Follow on Linkedin</a></li>
+                <li><a href="https://github.com/timothyguo86" class="text-white">Follow on Github</a></li>
+                <li><a href="https://codepen.io/timothyguo" class="text-white">Follow on Codepen</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <strong>50Days50Projects</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">50 Days 50 Projects</h1>
+            <p class="lead text-body-secondary">Explore 50 mini-projects crafted with HTML, CSS, and JavaScript.</p>
+            <div>
+              <a href="https://github.com/timothyguo86/50days50projects" class="btn btn-primary my-2">
+                <svg
+                  height="16"
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  version="1.1"
+                  width="16"
+                  data-view-component="true"
+                >
+                  <path
+                    fill="#FFF"
+                    d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+                  ></path>
+                </svg>
+                Checkout on github</a
+              >
+            </div>
+            <img src="images/html5.svg" alt="html5 label" />
+            <img src="images/css3.svg" alt="css3 label" />
+            <img src="images/javascirpt.svg" alt="javascipt label" />
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/1-expanding-cards.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 1: Expanding Cards</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="01-Expanding Cards/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/01-Expanding%20Cards"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 02 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/2-progress-steps.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 2: Progress Steps</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="02-Progress Steps/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/02-Progress%20Steps"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 03 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/3-rotating-navigation-animation.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 3: Rotating Navigation Animation</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="03-Rotating Navigation/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/03-Rotating%20Navigation"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 04 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/4-hidden-search-widget.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 4: Hidden Search Widget</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="04-Hidden Search Widget/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/04-Hidden%20Search%20Widget"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 05 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/5-blurry-loading.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 5: Blurry Loading</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="05-Blurry Loading/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/05-Blurry%20Loading"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 06 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/6-scroll-animation.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 6: Scroll Animation</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="06-Scroll Animation/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/06-Scroll%20Animation"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Continue adding projects in similar format -->
+            <!-- Project 07 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/7-split-landing-page.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 7: Split Landing Page</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="07-Split Landing Page/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/07-Split%20Landing%20Page"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 08 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/8-form-wave.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 8: Form Wave Animation</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="08-Form Wave Animation/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/08-Form%20Wave%20Animation"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 09 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/9-sound-board.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 9: Sound Board</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="09-Sound Board/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/09-Sound%20Board"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/10-dad-jokes.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 10: Dad Jokes</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="10-Dad Jokes/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/10-Dad%20Jokes"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/11-event-keycodes.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 11: Event Keycodes</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="11-Event Keycodes/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/11-Event%20KeyCodes"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 12 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/12-faq-collapse.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 12: FAQ Collapse</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="12-FAQ Collapse/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/12-FAQ%20Collapse"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 13 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/13-random-choice-picker.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 13: Random Choice Picker</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="13-Random Choice Picker/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/13-Random%20Choice%20Picker"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 14 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/14-animated-navigation.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 14: Animated Navigation</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="14-Animated Navigation/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/14-Animated%20Navigation"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 15 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/15-incrementing-counter.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 15: Incrementing Counter</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="15-Incrementing Counter/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/15-Incrementing%20Counter"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 16 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/16-drink-water.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 16: Drink Water</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="16-Drink Water/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/16-Drink%20Water"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 17 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/17-movie-app.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 17: Movie App</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="17-Movie App/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/17-Movie%20App"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 18 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/18-background-slider.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 18: Background Slider</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="18-Background Slider/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/18-Background%20Slider"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 19 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/19-theme-clock.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 19: Theme Clock</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="19-Theme Clock/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/19-Theme%20Clock"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 20 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/20-button-ripple-effect.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 20: Button Ripple Effect</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="20-Button Ripple Effect/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/20-Button%20Ripple%20Effect"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 21 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/21-drag-n-drop.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 21: Drag N Drop</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="21-Drag N Drop/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/21-Drag%20N%20Drop"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 22 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/22-drawing-app.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 22: Drawing App</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="22-Drawing App/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/22-Drawing%20App"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 23 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/23-kinetic-loader.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 23: Kinetic Loader</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="23-Kinetic CSS Loader/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/23-Kinetic%20CSS%20Loader"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 24 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/24-content-placeholder.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 24: Content Placeholder</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="24-Content Placeholder/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/24-Content%20Placeholder"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 25 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/25-sticky-navbar.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 25: Sticky Navbar</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="25-Sticky Navbar/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/25-Sticky%20Navbar"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 26 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/26-double-vertical-slider.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 26: Double Vertical Slider</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="26-Double Vertical Slider/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/26-Double%20Vertical%20Slider"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 27 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/27-toast-notification.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 27: Toast Notification</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="27-Toast Notification/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/27-Toast%20Notification"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 28 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/28-github-profiles.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 28: Github Profiles</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="28-Github Profiles/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/28-Github%20Profiles"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 29 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/29-double-click-heart.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 29: Double Click Heart</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="29-Double Heart Click/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/29-Double%20Heart%20Click"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 30 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/30-auto-text-effect.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 30: Auto Text Effect</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="30-Auto Text Effect/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/30-Auto%20Text%20Effect"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 31 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/31-password-generator.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 31: Password Generator</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="31-Password Generator/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/31-Password%20Generator"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 32 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/32-good-cheap-fast.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 32: Good Cheap Fast Checkboxes</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="32-Good, Cheap, Fast Checkboxes/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/32-Good%2C%20Cheap%2C%20Fast%20Checkboxes"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 33 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/33-notes-app.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 33: Notes App</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="33-Notes App/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/33-Notes%20App"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 34 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/34-animated-countdown.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 34: Animated Countdown</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="34-Animated Countdown/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/34-Animated%20Countdown"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 35 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/35-image-carousel.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 35: Image Carousel</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="35-Image Carousel/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/35-Image%20Carousel"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 36 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/36-hoverboard.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 36: Hoverboard</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="36-Hoverboard/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/36-Hoverboard"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 37 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/37-pokedex.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 37: Pokedex</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="37-Pokedex/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/37-Pokedex"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 38 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/38-mobile-tab-navigation.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 38: Mobile Tab Navigation</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="38-Mobile Tab Navigation/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/38-Mobile%20Tab%20Navigation"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 39 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/39-password-strength-background.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 39: Password Strength Background</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="39-Password Strength Background/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/39-Password%20Strength%20Background"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 40 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/40-3d-background-boxes.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 40: 3D Background Boxes</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="40-3D Background Boxes/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/40-3D%20Background%20Boxes"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 41 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/41-verify-account-ui.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 41: Verify Account UI</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="41-Verify Account UI/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/41-Verify%20Account%20UI"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 42 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/42-live-user-filter.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 42: Live User Filter</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="42-Live User Filter/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/42-Live%20User%20Filter"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 43 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/43-feedback-ui-design.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 43: Feedback UI Design</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="43-Feedback UI Design/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/43-Feedback%20UI%20Design"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 44 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/44-custom-range-slider.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 44: Custom Range Slider</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="44-Custom Range Slider/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/44-Custom%20Range%20Slider"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 45 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/45-netflix-mobile-navigation.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 45: Netflix Mobile Navigation</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="45-Netflix Navigation/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/45-Netflix%20Navigation"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 46 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/46-quiz-app.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 46: Quiz App</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="46-Quiz App/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/46-Quiz%20App"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 47 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/47-testimonial-box-switcher.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 47: Testimonial Box Switcher</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="47-Testimonial Box Switcher/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/47-Testimonial%20Box%20Switcher"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 48 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/48-random-image-feed.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 48: Random Image Feed</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="48-Random Image Feed/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/48-Random%20Image%20Feed"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 49 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/49-todo-list.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 49: Todo List</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="49-Todo List/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/49-Todo%20List"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 50 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="images/50-insect-catch-game.png"
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  alt="Thumbnail"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 50: Insect Catch Game</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="50-Insect Catch Game/index.html"
+                        target="_blank"
+                        >View</a
+                      >
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                        href="https://github.com/timothyguo86/50days50projects/tree/master/50-Insect%20Catch%20Game"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
