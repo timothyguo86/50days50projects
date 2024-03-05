@@ -1,0 +1,15 @@
+body {
+  background-color: #f5e3d4;
+}
+
+.hero {
+  background-image: url('../images/coding.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+@media (max-width: 768px) {
+  .hero {
+    background-image: none;
+  }
+}
