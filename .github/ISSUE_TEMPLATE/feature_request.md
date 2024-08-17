@@ -1,20 +1,20 @@
 ---
-name: Feature Request
-about: Use this template for feature requests.
-title: 'Feature Request: '
-labels: enhancement
+name: Feature request
+about: Suggest an idea for this project
+title: ''
+labels: ''
 assignees: ''
 
 ---
 
-### Describe the feature or problem you'd like to solve
+**Is your feature request related to a problem? Please describe.**
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-<!-- A clear and concise description of what the feature or problem is. -->
+**Describe the solution you'd like**
+A clear and concise description of what you want to happen.
 
-### Proposed solution
+**Describe alternatives you've considered**
+A clear and concise description of any alternative solutions or features you've considered.
 
-<!-- How will it benefit CLI and its users? -->
-
-### Additional context
-
-<!-- Add any other context like screenshots or mockups are helpful, if applicable. -->
+**Additional context**
+Add any other context or screenshots about the feature request here.
